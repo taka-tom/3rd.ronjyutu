@@ -5,3 +5,12 @@ function toggleMenu() {
   menu.classList.toggle("active");
 
 }
+
+
+function toggleAnswer() {
+
+  const answer = document.getElementById("answer");
+
+  answer.classList.toggle("show");
+
+}
