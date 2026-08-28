@@ -768,3 +768,269 @@ body {
   }
 
 }
+
+/* =========================
+   QUESTION PAGE
+========================= */
+
+.question-header {
+  padding: 80px 22px 60px;
+
+  background: #eee9df;
+}
+
+.question-header h1 {
+  margin-top: 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 38px;
+
+  line-height: 1.4;
+
+  font-weight: normal;
+
+  color: #6b2635;
+}
+
+
+/* =========================
+   ESSAY
+========================= */
+
+.essay-section {
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 70px 22px;
+}
+
+
+.question-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.question-info span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #b08d57;
+}
+
+.question-info strong {
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  color: #6b2635;
+}
+
+
+.essay-section h2 {
+  margin-top: 30px;
+
+  font-size: 19px;
+
+  line-height: 2;
+
+  font-weight: normal;
+}
+
+
+.limit {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 5px 12px;
+
+  background: #eee9df;
+
+  color: #6b2635;
+
+  font-size: 11px;
+}
+
+
+.think-message {
+  margin-top: 30px;
+
+  padding: 20px;
+
+  background: #f8f6f1;
+
+  border-left: 3px solid #b08d57;
+
+  font-size: 13px;
+
+  color: #666;
+}
+
+
+/* =========================
+   ANSWER BUTTON
+========================= */
+
+.answer-toggle {
+  margin-top: 30px;
+
+  padding: 13px 28px;
+
+  border: none;
+
+  background: #6b2635;
+
+  color: white;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.answer-toggle:hover {
+  background: #4e1b27;
+}
+
+
+/* =========================
+   ANSWER
+========================= */
+
+.answer {
+  display: none;
+
+  margin-top: 35px;
+
+  padding: 30px 25px;
+
+  background: white;
+
+  border: 1px solid #e2ddd5;
+}
+
+.answer.show {
+  display: block;
+}
+
+
+.answer-label {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #b08d57;
+}
+
+
+.answer h3 {
+  margin-top: 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: normal;
+
+  color: #6b2635;
+}
+
+
+.answer > p {
+  margin-top: 20px;
+
+  font-size: 14px;
+
+  line-height: 2;
+}
+
+
+/* =========================
+   POINT
+========================= */
+
+.point-box {
+  margin-top: 30px;
+
+  padding: 22px;
+
+  background: #f8f6f1;
+}
+
+
+.point-box h4 {
+  font-family: Georgia, serif;
+
+  color: #6b2635;
+
+  letter-spacing: 2px;
+}
+
+
+.point-box ul {
+  margin-top: 12px;
+
+  padding-left: 20px;
+
+  font-size: 13px;
+
+  color: #666;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.question-navigation {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  max-width: 850px;
+
+  margin: auto;
+
+  padding: 0 22px 80px;
+}
+
+.question-navigation a {
+  color: #6b2635;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #b08d57;
+}
+
+
+/* =========================
+   PC
+========================= */
+
+@media (min-width: 768px) {
+
+  .question-header {
+    padding: 110px 10%;
+  }
+
+  .question-header h1 {
+    font-size: 52px;
+  }
+
+  .essay-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+}
