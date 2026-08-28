@@ -1,0 +1,569 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+
+  background: #f8f6f1;
+  color: #333;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 22px;
+
+  background: #f8f6f1;
+
+  border-bottom: 1px solid #ddd8cf;
+
+  position: relative;
+  z-index: 10;
+}
+
+
+/* ロゴ */
+
+.logo {
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  color: #6b2635;
+
+  line-height: 1.2;
+}
+
+.logo span {
+  display: block;
+
+  margin-top: 2px;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+
+  color: #8a8178;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+  width: 44px;
+  height: 44px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 25px;
+
+  color: #6b2635;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  position: absolute;
+
+  top: 72px;
+  left: 0;
+
+  width: 100%;
+
+  background: #f8f6f1;
+
+  border-bottom: 1px solid #ddd8cf;
+
+  display: none;
+
+  z-index: 9;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu a {
+  display: block;
+
+  padding: 15px 25px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #e5e0d8;
+
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #6b2635;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 500px;
+
+  padding: 90px 25px 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8f6f1 0%,
+      #eee9df 100%
+    );
+}
+
+
+/* 小見出し */
+
+.hero-label,
+.section-label {
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #b08d57;
+
+  font-weight: bold;
+}
+
+
+/* メインタイトル */
+
+.hero h1 {
+  margin-top: 18px;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  line-height: 1.35;
+
+  font-weight: normal;
+
+  color: #6b2635;
+}
+
+
+/* 説明 */
+
+.hero-text {
+  max-width: 430px;
+
+  margin-top: 25px;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.main-button {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin-top: 35px;
+
+  padding: 12px 28px;
+
+  background: #6b2635;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  background: #4e1b27;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  padding: 75px 22px;
+}
+
+.section h2 {
+  margin-top: 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: normal;
+
+  color: #6b2635;
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+
+.category-card {
+  position: relative;
+
+  display: block;
+
+  padding: 25px;
+
+  min-height: 175px;
+
+  background: white;
+
+  border: 1px solid #e5e0d8;
+
+  text-decoration: none;
+
+  color: #333;
+
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px
+    rgba(0, 0, 0, 0.07);
+}
+
+
+/* 番号 */
+
+.number {
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  color: #b08d57;
+
+  letter-spacing: 1px;
+}
+
+
+.category-card h3 {
+  margin-top: 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: normal;
+
+  color: #6b2635;
+}
+
+
+.category-card p {
+  margin-top: 8px;
+
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+.arrow {
+  position: absolute;
+
+  right: 22px;
+  bottom: 18px;
+
+  font-size: 20px;
+
+  color: #b08d57;
+}
+
+
+/* =========================
+   QUESTION
+========================= */
+
+.question-section {
+  padding: 75px 22px;
+
+  background: #6b2635;
+
+  color: white;
+}
+
+.question-section .section-label {
+  color: #d4b77a;
+}
+
+.question-section h2 {
+  margin-top: 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+
+  font-weight: normal;
+}
+
+
+.question-card {
+  margin-top: 30px;
+
+  padding: 30px 25px;
+
+  background: #f8f6f1;
+
+  color: #333;
+}
+
+
+.question-category {
+  display: inline-block;
+
+  padding: 3px 10px;
+
+  background: #eee9df;
+
+  color: #6b2635;
+
+  font-size: 11px;
+}
+
+
+.question-number {
+  margin-top: 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  color: #999;
+}
+
+
+.question-card h3 {
+  margin-top: 18px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  font-weight: normal;
+}
+
+
+.question-button {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 10px 20px;
+
+  border: 1px solid #6b2635;
+
+  color: #6b2635;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.question-button:hover {
+  background: #6b2635;
+
+  color: white;
+}
+
+
+/* =========================
+   METHOD
+========================= */
+
+.method {
+  max-width: 800px;
+}
+
+.method > p:not(.section-label) {
+  margin-top: 25px;
+
+  font-size: 14px;
+
+  color: #666;
+}
+
+
+.text-link {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: #6b2635;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #b08d57;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 45px 20px;
+
+  background: #33252a;
+
+  color: white;
+
+  text-align: center;
+}
+
+
+.footer p {
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+
+  letter-spacing: 3px;
+}
+
+
+.footer span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 8px;
+
+  letter-spacing: 2px;
+
+  color: #c8beb9;
+}
+
+
+/* =========================
+   PC
+========================= */
+
+@media (min-width: 768px) {
+
+  .header {
+    padding: 0 50px;
+  }
+
+  .hero {
+    min-height: 620px;
+
+    padding-left: 10%;
+
+    padding-right: 10%;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  .section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+  }
+
+  .category-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .question-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
